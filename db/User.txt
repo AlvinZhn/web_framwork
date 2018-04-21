@@ -1,30 +1,23 @@
 [
   {
-    "password": "admin",
+    "note": "123",
+    "role": 1,
     "username": "admin",
     "id": 1,
-    "role": 1,
-    "note": "123"
+    "password": "admin"
   },
   {
-    "password": "test",
+    "note": "test",
+    "role": 2,
     "username": "test",
     "id": 2,
-    "role": 2,
-    "note": "test"
+    "password": "test"
   },
   {
-    "password": "bar",
+    "note": "baz",
+    "role": 2,
     "username": "foo",
     "id": 3,
-    "role": 2,
-    "note": "baz"
-  },
-  {
-    "password": "123",
-    "username": "test2",
-    "id": 4,
-    "role": 2,
-    "note": "test2"
+    "password": "bar"
   }
 ]

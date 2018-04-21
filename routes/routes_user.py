@@ -4,7 +4,7 @@
 """
 from model.Session import Session
 from model.User import User
-from routes import (
+from routes.routes_index import (
 	random_str,
 	current_user,
 	http_response,

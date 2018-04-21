@@ -6,16 +6,18 @@ import _thread
 import socket
 import urllib.parse
 
-from routes import (
+from routes.routes_index import (
 	route_index,
 	route_static,
-	error,
+	error
+)
+from routes import (
+	routes_user,
+	routes_message,
+	routes_todo,
+	routes_admin,
 )
 from utils import log
-import routes_todo
-import routes_user
-import routes_message
-import routes_admin
 from validations import (
 	login_required,
 	current_user_required,
