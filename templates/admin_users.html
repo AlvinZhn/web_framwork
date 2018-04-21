@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Administration</title>
+</head>
+<body>
+    <h1>用户列表</h1>
+
+    <div>
+        <table border="1">
+            <tr>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+            {% for user in user_list %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.password }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <br>
+    <form action="/admin/update" method="post">
+    <input type="text" autofocus name="id" placeholder="请输入用户id">
+    <br>
+    <input type="text" name="password" placeholder="请输入新密码">
+    <br>
+    <button type="submit">修改</button>
+    </form>
+</body>
+</html>
+
+
+

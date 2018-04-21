@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO</title>
+</head>
+<body>
+<h1>TODO: </h1>
+<form action="/todo/add" method="post">
+    <input type="text" name="title" autofocus placeholder="请输入TODO">
+    <br>
+    <button type="submit">添加</button>
+</form>
+<div>
+    {% for t in todos %}
+        {{ t.id }} : {{ t.title }}
+        <a href="/todo/edit?id={{ t.id }}">编辑</a>
+        <a href="/todo/delete?id={{ t.id }}">删除</a>
+        <br>
+        创建时间：{{ t.created_time }} <br> 更新时间：{{ t.updated_time }}
+        <br>
+    {% endfor %}
+</div>
+</body>
+</html>

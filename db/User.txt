@@ -1,7 +1,30 @@
 [
   {
+    "password": "admin",
     "username": "admin",
     "id": 1,
-    "password": "123"
+    "role": 1,
+    "note": "123"
+  },
+  {
+    "password": "test",
+    "username": "test",
+    "id": 2,
+    "role": 2,
+    "note": "test"
+  },
+  {
+    "password": "bar",
+    "username": "foo",
+    "id": 3,
+    "role": 2,
+    "note": "baz"
+  },
+  {
+    "password": "123",
+    "username": "test2",
+    "id": 4,
+    "role": 2,
+    "note": "test2"
   }
 ]
